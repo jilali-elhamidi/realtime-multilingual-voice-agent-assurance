@@ -37,7 +37,11 @@ This project was built for the **Capgemini GenAI & Agentic AI Hackathon**, addre
 ### 4️⃣ 🛡️ The Invisible Supervisor
 - **Secondary AI model** monitors the conversation in real-time  
 - **Crisis Detection:** triggers human handover if anger or legal threats detected, with **full context summary**
+### 5️⃣ 🌍 Production-Ready Integration (SIP/Twilio)
 
+- **Universal Connectivity:** Thanks to LiveKit, the agent natively supports **SIP Trunks and Twilio**.
+- **Plug & Play:** It can be deployed on a real phone number immediately.
+- **Enterprise Webhooks:** Easily integrates with external CRMs (Salesforce, HubSpot) or ticketing tools via standard JSON webhooks.
 ---
 
 ## 🏗️ Technical Architecture
@@ -144,4 +148,11 @@ Run this script once:
 ```bash
 python script_rag.py
 ```
+### ⚠️ Petit Rappel Code (Important)
 
+Dans votre fichier `insurance_rag_tool.py`, la ligne 140 est actuellement "en dur" :
+`WEBHOOK_URL = "https://webhook.site/"`
+```python
+# Dans insurance_rag_tool.py
+WEBHOOK_URL = os.getenv("WEBHOOK_URL", "https://webhook.site/")
+```
