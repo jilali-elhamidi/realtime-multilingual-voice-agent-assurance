@@ -156,3 +156,9 @@ Dans votre fichier `insurance_rag_tool.py`, la ligne 140 est actuellement "en du
 # Dans insurance_rag_tool.py
 WEBHOOK_URL = os.getenv("WEBHOOK_URL", "https://webhook.site/")
 ```
+
+## 📊 Canva Mini Presentation
+
+Check out this short presentation: 
+
+[View the Canva Presentation](https://canva-presentation-pi.vercel.app/)
