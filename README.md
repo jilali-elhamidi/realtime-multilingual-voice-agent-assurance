@@ -162,3 +162,9 @@ WEBHOOK_URL = os.getenv("WEBHOOK_URL", "https://webhook.site/")
 Check out this short presentation: 
 
 [View the Canva Presentation](https://canva-presentation-pi.vercel.app/)
+
+## 🌐 Live Demo (Mini Website)
+
+Try the agent demo on this small website:  
+
+[Open the Live Demo](https://assurbot-ai.vercel.app/)
